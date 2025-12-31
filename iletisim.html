@@ -4,115 +4,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Ömer Faruk Kekeç Hakkında </title>
+    <title> Ömer Faruk Kekeç İletişim </title>
     <style>
         body {
             margin: 0;
             padding: 0;
             width: 100%;
             min-height: 100vh;
+            background-color: #FFF3E0;
             font-family: sans-serif;
         }
 
-        .bolum {
+        .kutu {
+            background-color: #003366;
+            width: 90%;
+            max-width: 500px; 
+            min-height: 70vh;
+            color: #FFFFFF;
+            margin: 20px auto; 
+            padding: 20px;
+            box-sizing: border-box;
+            border-radius: 10px;
+        }
+
+        iframe {
             width: 100%;
-            min-height: 100vh;
-            display: flex;
-            flex-wrap: wrap; 
-        }
-
-        .sol-kisim {
-            width: 60%;
-            background-color: #ff5432;
-            color: #003850;
-            padding: 40px;
-            box-sizing: border-box;
-        }
-
-        .sag-kisim {
-            width: 40%;
-            background-color: #003850;
-            color: #ff5432;
-            padding: 40px;
-            box-sizing: border-box;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-         
-        
-        p {
-            line-height: 1.6;
-            font-size: 1.2rem;
-            margin-bottom: 20px;
-        }
-
-        ul {
-            font-size: 1.5rem;
-            
+            height: 300px;
+            border: 3px solid orange;
+            border-radius: 8px;
         }
 
         
-        @media (max-width: 850px) {
-            .sol-kisim, .sag-kisim {
-                width: 100%; 
-                height: auto;
-            }
-            .bolum {
-                height: auto;
-            }
-        }
     </style>
 </head>
 
 <body>
+    <h1 style="text-align: center; color: #003366; font-size: 40px; margin-top: 20px;">
+        İletişim
+    </h1>
 
-    <div class="bolum">
-
-        <div class="sol-kisim">
-            <h1>Hakkımda</h1>
-            <p>
-                Ben Ömer Faruk Kekeç, İstanbul Medeniyet Üniversitesi'nde Bilgisayar 
-                Mühendisliği 1. Sınıf öğrencisiyim. 17 yaşındayım. İstanbul'da doğdum ve büyüdüm. 
-            </p>
-            <p>
-                Kodlamayı ve karmaşık problemleri çözmeyi öğreniyorum. 
-                Mühendislik yolculuğumun henüz çok başındayım. 
-                Bu yolculukta sadece kod yazmayı değil, bir mühendis gibi düşünmeyi ve 
-                karmaşık sistemleri anlamayı da öğreniyorum. 
-            </p>
-            <p>
-                Hedefim, üniversite yıllarımı sadece derslerle sınırlı tutmayıp, 
-                gerçek dünya sorunlarına teknolojik çözümler üretebilen donanımlı bir mühendis olarak mezun olmak.
-            </p>
-        </div>
-
-        <div class="sag-kisim">
-            <div>
-                <ul style="text-align: left;">
-                    <li>Tech Stack:
-                        <ul>
-                            <li>C</li>
-                            <li>HTML/CSS</li>
-                            <li>JavaScript</li>
-                            <li>Python</li>
-                        </ul>
-                    </li>
-                    <br>
-                    <li>Favori Araçlar:
-                        <ul>
-                            <li>VS Code</li>
-                            <li>GitHub</li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </div>
-
+    <div class="kutu">
+        <p>Telefon 📞: 05415586365</p>
+        <hr color="orange">
+        <p>E-posta ✉: omerfarkkekec@gmail.com</p>
+        <hr color="orange">
+        <p>Adres 📍: Merkez, Şht. İbrahim Candemir Sk. No:34, 34406 Kağıthane/İstanbul </p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d741.4374015255052!2d28.969853983120277!3d41.08783899114932!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1str!2str!4v1767176154438!5m2!1str!2str" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
-
 </body>
 </html>
     
+
 
