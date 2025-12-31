@@ -1,61 +1,93 @@
 <!DOCTYPE html>
-<!--25120205049 Ömer Faruk Kekeç-->
 <html lang="tr-TR">
 
 <head>
-    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Ömer Faruk Kekeç </title>
+    <title>Ömer Faruk Kekeç</title>
     <style>
-        body{
+        body {
             margin: 0;
             padding: 0;
             display: flex;
             width: 100%;
-            height: 100vh;
+            min-height: 100vh;
+            font-family: sans-serif; 
         }
-        .sol-yari,.sag-yari{
+
+        .sol-yari, .sag-yari {
             width: 50%;
-            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center; 
+            align-items: center; 
+            padding: 20px;
             box-sizing: border-box;
-            padding: 40px; 
-            overflow: auto;
+        }
 
-        }
-        a:link{
-            color: #ff5432;
-            text-decoration: none;
-        }
-        a:visited{
-            color: #ff5432;
-            text-decoration: none;
-        }
         
+        .sol-yari img {
+            max-width: 90%;
+            height: auto;
+            max-height: 80vh;
+            border-radius: 10px; 
+        }
+
+        .link-konteynir {
+            width: 80%;
+            margin-top: 30px;
+        }
+
+        a:link, a:visited {
+            color: #ff5432;
+            text-decoration: none;
+            font-size: 1.8rem; 
+            display: block; 
+            margin: 10px 0;
+            transition: 0.3s;
+        }
 
 
+        hr {
+            border: 0;
+            border-top: 1px solid orange;
+            opacity: 0.3;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                flex-direction: column; 
+            }
+            .sol-yari, .sag-yari {
+                width: 100%; 
+                min-height: 50vh;
+            }
+            .sol-yari img {
+                max-height: 40vh; 
+            }
+        }
     </style>
 </head>
+
 <body>
-    <div class="sol-yari" style="background-color: #ff5432; text-align: center;">
-        <img style="width: 500px; height: 640px; " src="foto.png" alt="Ömer Faruk Kekeç">
+
+    <div class="sol-yari" style="background-color: #ff5432;">
+        <img src="foto.png" alt="Ömer Faruk Kekeç">
     </div>
 
     <div class="sag-yari" style="background-color: #003850; color: orange; text-align: center;">
         <h1>Ömer Faruk Kekeç</h1>
-        <p style="font-size: large; ">1.Sınıf Bilgisayar Mühendisliği</p>
-        <div style="margin: 200px; background-color: #003850;">
-            <a href="hakkimda.html" target="_blank" style="font-size: 30px;">Hakkımda</a>
-            <hr>
-            <a href="iletisim.html" target="_blank" style="font-size: 30px;">İletişim</a>
-            <hr>
-            <a href="sosyal.html" target="_blank" style="font-size: 30px;">Sosyal Medya</a>
-        </div>
+        <p style="font-size: 1.2rem;">1. Sınıf Bilgisayar Mühendisliği</p>
         
-
+        <div class="link-konteynir">
+            <a href="hakkimda.html" target="_blank">Hakkımda</a>
+            <hr>
+            <a href="iletisim.html" target="_blank">İletişim</a>
+            <hr>
+            <a href="sosyal.html" target="_blank">Sosyal Medya</a>
+        </div>
     </div>
 
-
 </body>
-
 </html>
+
